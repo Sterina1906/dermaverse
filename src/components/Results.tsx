@@ -25,7 +25,7 @@ interface ResultsProps {
   onDiseaseSelect: (disease: string) => void;
 }
 
-export default function Results({ result, isLoading, selectedDisease, onDiseaseSelect }: ResultsProps) {
+export default function Results({ result, isLoading }: ResultsProps) {
   if (isLoading) {
     return (
       <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-md overflow-hidden">
